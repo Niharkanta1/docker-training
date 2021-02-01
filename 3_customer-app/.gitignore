@@ -1,0 +1,13 @@
+.output
+.log
+target
+bin
+output
+classes
+node_modules\
+customer-web/node_modules/
+.classpath
+.project
+.settings\
+.git
+customer-api/.classpath

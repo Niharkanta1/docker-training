@@ -1,0 +1,11 @@
+version: '2.2'
+services:
+  spring-boot-demo:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: spring-boot-app
+    expose: 
+      - 8085
+    ports:
+      - 8001:8085

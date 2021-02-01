@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile  
+    image: 'spring-boot-app'
+    expose: 
+      - 8085
+
+  loadbalancer:
+    container_name: nginx
+    image: nginx:1.13
+    expose: 
+      - 80
+    ports:
+      - 8002:80
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    depends_on: 
+      - app
+  
