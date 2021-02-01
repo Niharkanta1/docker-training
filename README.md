@@ -1,4 +1,6 @@
-  ## Installation
+Credit: (https://github.com/mbzama)
+ 
+ ## Installation
 Please refer to this repo for instructions: [docker-setup](https://github.com/mbzama/docker-setup)
    
       
